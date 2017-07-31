@@ -30,11 +30,13 @@ int main(int argc, char** argv)
 
 	std::cout << "Chosen NUMA node=" << nodeId << std::endl;
 
+	// create NUMA node
 	NumaNode	node(nodeId);
 	node.set_num_threads(4);
 	node.except_cpu("0,8,16,24");
 	node.run();
 
+	// create task on NUMA
 	Task	task(node);
 	task.run();
 
