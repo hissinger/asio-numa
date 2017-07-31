@@ -4,7 +4,7 @@
 #include <numa.h>
 #include <numaif.h>
 #include <boost/asio.hpp>
-#include <boost/thread.hpp>>
+#include <boost/thread.hpp>
 
 class NumaNode
 {
